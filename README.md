@@ -2,34 +2,34 @@
 
 A Real-World example backend using apollo-server, serverless, prisma and nexus
 
-- clone this repo and install dependencies
+Clone this repo and install dependencies
 
-```
+```bash
 yarn
 ```
 
-- specified your mysql database url in a `.env` file
-- migrate a dev database
+Specified your mysql database url in a `.env` file
+Migrate a dev database
 
-```
+```bash
 yarn db:migrate
 ```
 
-- generate prisma client
+Generate prisma client
 
-```
+```bash
 yarn generate:prisma
 ```
 
-- run locally using serverless offline
+Run locally using serverless offline
 
-```
+```bash
 yarn dev
 ```
 
-- visit `http://localhost:3000/dev/graphql` for testing
-- deploy to your AWS lambda (need configuring AWS access key and secret at first)
+Visit `http://localhost:3000/dev/graphql` for testing
+Deploy to your AWS lambda (need configuring AWS access key and secret at first)
 
-```
+```bash
 yarn deploy
 ```
